@@ -1,0 +1,23 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/moviePosterFragId"
+        android:layout_weight="2"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/movieDetailFragId"
+        android:layout_weight="3"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+</LinearLayout>

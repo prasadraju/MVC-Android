@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <View
+            android:id="@+id/movieTitleBgView"
+            android:layout_width="match_parent"
+            android:layout_height="96dip"
+            android:background="@color/movieTitleBg" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dip"
+            android:paddingTop="24dip"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/poster_icon"
+            android:layout_width="172dip"
+            android:layout_height="196dip"
+            android:layout_below="@+id/movieTitleBgView"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="18dip"
+            android:background="@drawable/placeholder"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieTitleBgView"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="18dip"
+            android:layout_toRightOf="@+id/poster_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/releaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/movieLabelSize"
+
+                />
+
+            <TextView
+                android:id="@+id/popularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/movieLabelSize"
+
+                />
+
+            <TextView
+                android:id="@+id/voteAvarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/movieLabelSize"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/markAsFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dip"
+
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poster_icon"
+            android:layout_marginTop="16dip"
+            android:padding="8dip" />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/overview"
+            android:layout_margin="8dip"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/trailorsHeaderview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overview"
+            android:layout_marginTop="16dip"
+            android:padding="8dip"
+            android:text="Trailors : "
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/trailorll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trailorsHeaderview"
+            android:orientation="vertical"></LinearLayout>
+
+        <View
+            android:id="@+id/teasorlineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/trailorll"
+            android:layout_margin="8dip"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/reviewHeaderview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teasorlineView"
+            android:layout_marginTop="16dip"
+            android:paddingLeft="8dip"
+            android:text="Reviews : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/reviewsll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewHeaderview"
+            android:orientation="vertical"></LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
